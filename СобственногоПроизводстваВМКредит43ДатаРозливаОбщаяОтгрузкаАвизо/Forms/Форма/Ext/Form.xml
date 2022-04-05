@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Сформировать" id="4">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+				<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+				<CommandName>Form.Command.Сформировать</CommandName>
+				<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="5"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СформроватьПериод" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформровать период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформровать период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СформроватьПериодРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаА" id="14">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа А</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАРасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<InputField name="ПериодОстатков" id="30">
+							<DataPath>Объект.ПериодКР43</DataPath>
+							<ContextMenu name="ПериодОстатковКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ПериодОстатковРасширеннаяПодсказка" id="32"/>
+						</InputField>
+						<InputField name="СчетОстатков" id="19">
+							<DataPath>Объект.СчетОстатков</DataPath>
+							<ContextMenu name="СчетОстатковКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="СчетОстатковРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="СкладОстатков" id="16">
+							<DataPath>Объект.СкладОстатков</DataPath>
+							<ContextMenu name="СкладОстатковКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="СкладОстатковРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="ГодУрожая" id="11">
+							<DataPath>Объект.ГодУрожая</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Год урожая продукции больше</v8:content>
+								</v8:item>
+							</Title>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧЦ=4; ЧРГ=' '; ЧГ=0; ДФ=</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ГодУрожаяКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ГодУрожаяРасширеннаяПодсказка" id="13"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаБ" id="22">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа Б</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаБРасширеннаяПодсказка" id="23"/>
+					<ChildItems>
+						<InputField name="Организация" id="33">
+							<DataPath>Объект.Организация</DataPath>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="ПодразделениеЗатрат" id="27">
+							<DataPath>Объект.ПодразделениеЗатрат</DataPath>
+							<ContextMenu name="ПодразделениеЗатратКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ПодразделениеЗатратРасширеннаяПодсказка" id="29"/>
+						</InputField>
+						<InputField name="счетРасхода" id="39">
+							<DataPath>Объект.счетРасхода</DataPath>
+							<ContextMenu name="счетРасходаКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="счетРасходаРасширеннаяПодсказка" id="41"/>
+						</InputField>
+						<InputField name="счетПрихода" id="36">
+							<DataPath>Объект.счетПрихода</DataPath>
+							<ContextMenu name="счетПриходаКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="счетПриходаРасширеннаяПодсказка" id="38"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="ТабДок" id="1">
+			<DataPath>Объект.ТабДок</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ShowGrid>true</ShowGrid>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="3"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.СобственногоПроизводстваВМКредит43ДатаРозливаОбщаяОтгрузкаАвизо</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+	</Commands>
+</Form>
